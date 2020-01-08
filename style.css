@@ -1,0 +1,160 @@
+body {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-container {
+    float: right;
+}
+.item {
+    display: inline-block;
+}
+
+.item:nth-child(2) {
+    margin-right: 20px;
+}
+.item a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+.item a:hover {
+    color: rgb(61, 61, 61);
+    text-decoration: underline;
+}
+
+.item .item--menu, .item .item--thumb {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.item--menu:before {
+    content: '';
+    background: url("img/menu.png") no-repeat;
+    padding: 0 10px;
+}
+
+.navigation {
+    height: 30px;
+    overflow: hidden;
+}
+
+.default {
+    /* border: 1px solid black; */
+    height: 500px;
+    width: 600px;
+    margin: 105px auto;
+    text-align: center;
+}
+
+.holder {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.holder img {
+    width: 100%;
+    height: auto;
+}
+
+.search-container, .quick-access {
+    width: 500px;
+    margin: 60px auto;
+}
+
+.search-container input{
+    width: 500px;
+    box-sizing: border-box;
+    padding: 7px;
+    border-radius: 100px;
+    border: 1px solid #ece4e4;
+}
+
+.qa-list {
+    width: 100%;
+    box-sizing: border-box;
+}
+.qa-list li {
+    display: inline-block;
+    float: left;
+    margin-bottom: 15px;
+    width: 20%;
+    cursor: pointer;
+}
+
+.qa-list .fab {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.qa-list li i {
+    text-decoration: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f5e9e9;
+    border-radius: 50%;
+    background-color: #f5e9e9;
+    margin-bottom: 15px;
+}
+
+.sns-name {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    background: #f1f1f1;
+    padding: 5px;
+    width: 80px;
+    height: 11px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 29px;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 670px) {
+    .default {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container input {
+        width: 400px;
+    }
+    .qa-list li {
+        width: 21%;
+    }
+    .container {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .default {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+    .qa-list li {
+        width: 25.03%;
+    }
+    .container {
+        width: 100%;
+    }
+}
